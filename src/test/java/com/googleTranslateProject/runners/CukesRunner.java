@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
                 "html:target/default-html-reports",
                 "rerun:target/rerun.txt"},
         features = "src/test/resources/features",
-        glue = "com/GoogleTranslateProject/step_definitions",
+        glue = "com/googleTranslateProject/step_definitions",
         dryRun = false,
         tags = "@wip"
 )
