@@ -10,9 +10,9 @@ import org.junit.runner.RunWith;
                 "html:target/default-html-reports",
                 "rerun:target/rerun.txt"},
         features = "src/test/resources/features",
-        glue = "com/group7Project/step_definitions",
-        dryRun = false,
-        tags = "@SearchProject"
+        glue = "com/GoogleTranslateProject/step_definitions",
+        dryRun = true,
+        tags = "@wip"
 )
 public class CukesRunner {
 
