@@ -35,20 +35,10 @@ public class BasePage {
 
     public void verifySearchedLetters(String searchLetters){
     //actual List of searched languages
-    List<String> actualList = BrowserUtils.getElementsText(By.xpath("//span[@class='QAJDKf' and @jsname='KTN78e']/.."));
+    String actualSearchResults = "//span[@class='QAJDKf' and @jsname='KTN78e']/..";
 
-    //List of all languages
-    clearSearchText.click();
-    BrowserUtils.scrollToElement(allLanguages);
+    List<String> actualList = BrowserUtils.getElementsText(By.xpath(actualSearchResults));
 
-    List<String> allLanguageslList = BrowserUtils.getElementsText(By.xpath("//div[@class='PxXj2d']"));
-
-    List<String> displayedLanguages = new ArrayList<>();
-        for (String eachLanguage: allLanguageslList) {
-        if (!eachLanguage.isEmpty()){
-            displayedLanguages.add(eachLanguage);
-        }
-    }
     //verify letters are displayed on actual list of languages
     System.out.println("searchLetters = " + searchLetters);
     System.out.println("actualList = " + actualList);
@@ -56,7 +46,22 @@ public class BasePage {
     for (String each : actualList) {
         Assert.assertTrue(each.toLowerCase().contains(searchLetters));
 
+        }
     }
+
+    public void getListOfAllLanguages(){
+        clearSearchText.click();
+        BrowserUtils.scrollToElement(allLanguages);
+
+        String allLanguages = "//div[@class='PxXj2d']";
+        List<String> allLanguageslList = BrowserUtils.getElementsText(By.xpath(allLanguages));
+
+        List<String> displayedLanguages = new ArrayList<>();
+        for (String eachLanguage: allLanguageslList) {
+            if (!eachLanguage.isEmpty()){
+                displayedLanguages.add(eachLanguage);
+            }
+        }
     }
 
 }
