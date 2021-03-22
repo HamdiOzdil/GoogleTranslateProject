@@ -1,0 +1,90 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-22T14:14:52.846Z",
+        "before": [
+          {
+            "result": {
+              "duration": 13840530300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "User can see \"Sign In For Translation History\" message if user is not signed in",
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-see-my-translating-history;user-can-see-\"sign-in-for-translation-history\"-message-if-user-is-not-signed-in",
+        "after": [
+          {
+            "result": {
+              "duration": 2476776600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1606589300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "History Button is clicked",
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.HistorySteps.history_Button_is_clicked()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 761562400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "\"Sign in for translation history\" message should appear",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sign in for translation history\"",
+                  "offset": 0
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.HistorySteps.message_should_appear(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@history"
+          }
+        ]
+      }
+    ],
+    "name": "As a user I should be able to see my translating history",
+    "description": "",
+    "id": "as-a-user-i-should-be-able-to-see-my-translating-history",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/history.feature",
+    "tags": [
+      {
+        "name": "@history",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
