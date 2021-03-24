@@ -31,6 +31,26 @@ public class TranslatePage extends BasePage{
     @FindBy(xpath = "//span[@jsname='W297wb']")
     public WebElement targetWordOutputBox;
 
+    @FindBy(xpath = "//a[@class='ita-kd-icon-button ita-kd-dropdown ita-kd-right ita-kd-icon-button-hover']")
+    public WebElement keyboardDropdownButton;
+
+    @FindBy(xpath = "//span[@class='ita-kd-menuitem-inputtool-name']")
+    public List<WebElement> keyboardOptions;
+
+    public List<String> getActualList(){
+        List<String> actualKeyboardOptionsList = new ArrayList<>();
+        for (WebElement each : keyboardOptions){
+            actualKeyboardOptionsList.add(each.getText());
+        }
+        return actualKeyboardOptionsList;
+    }
+
+    public void clickOnKeyboardDropdownButton(){
+        BrowserUtils.waitFor(2);
+        keyboardDropdownButton.click();
+        BrowserUtils.waitFor(2);
+    }
+
     public void selectSourceLanguage(String sourceLanguage){
         sourceLanguageDropdownButton.click();
         BrowserUtils.waitFor(2);

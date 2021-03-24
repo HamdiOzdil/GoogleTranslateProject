@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-03-22T14:14:52.846Z",
+        "start_timestamp": "2021-03-24T15:54:35.362Z",
         "before": [
           {
             "result": {
-              "duration": 13840530300,
+              "duration": 3847171000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 3,
-        "name": "User can see \"Sign In For Translation History\" message if user is not signed in",
+        "line": 6,
+        "name": "Verify that user can see keyboard options based on selected language",
         "description": "",
-        "id": "as-a-user-i-should-be-able-to-see-my-translating-history;user-can-see-\"sign-in-for-translation-history\"-message-if-user-is-not-signed-in",
+        "id": "keyboard-dropdown-options;verify-that-user-can-see-keyboard-options-based-on-selected-language",
         "after": [
           {
             "result": {
-              "duration": 2476776600,
+              "duration": 675088700,
               "status": "passed"
             },
             "match": {
@@ -35,50 +35,197 @@
         "steps": [
           {
             "result": {
-              "duration": 1606589300,
+              "duration": 2388875700,
               "status": "passed"
             },
-            "line": 4,
-            "name": "History Button is clicked",
+            "line": 7,
+            "name": "user select \"Turkish\" as a source language",
             "match": {
-              "location": "com.googleTranslateProject.step_definitions.HistorySteps.history_Button_is_clicked()"
+              "arguments": [
+                {
+                  "val": "\"Turkish\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_select_as_a_source_language(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 761562400,
+              "duration": 4281178300,
               "status": "passed"
             },
-            "line": 5,
-            "name": "\"Sign in for translation history\" message should appear",
+            "line": 8,
+            "name": "user click on Select Input Tool dropdown button",
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.KeyboardOptionsStepDefs.user_click_on_Select_Input_Tool_dropdown_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 74378400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should see below options",
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.KeyboardOptionsStepDefs.user_should_see_below_options(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Turkish - Q"
+                ]
+              },
+              {
+                "cells": [
+                  "Turkish - F"
+                ]
+              },
+              {
+                "cells": [
+                  "Turkish - Handwrite"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2223048500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user select \"English\" as a source language",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Sign in for translation history\"",
-                  "offset": 0
+                  "val": "\"English\"",
+                  "offset": 12
                 }
               ],
-              "location": "com.googleTranslateProject.step_definitions.HistorySteps.message_should_appear(java.lang.String)"
+              "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_select_as_a_source_language(java.lang.String)"
             },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5143346100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user click on Select Input Tool dropdown button",
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.KeyboardOptionsStepDefs.user_click_on_Select_Input_Tool_dropdown_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 58381800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User should see below options",
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.KeyboardOptionsStepDefs.user_should_see_below_options(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "English"
+                ]
+              },
+              {
+                "cells": [
+                  "English - DVORAK"
+                ]
+              },
+              {
+                "cells": [
+                  "English - Handwrite"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2234667700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user select \"Spanish\" as a source language",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Spanish\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_select_as_a_source_language(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4106325600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user click on Select Input Tool dropdown button",
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.KeyboardOptionsStepDefs.user_click_on_Select_Input_Tool_dropdown_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 66428500,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User should see below options",
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.KeyboardOptionsStepDefs.user_should_see_below_options(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Spanish"
+                ]
+              },
+              {
+                "cells": [
+                  "US International"
+                ]
+              },
+              {
+                "cells": [
+                  "Spanish - Handwrite"
+                ]
+              }
+            ],
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@history"
+            "name": "@keyboardDropdown"
           }
         ]
       }
     ],
-    "name": "As a user I should be able to see my translating history",
-    "description": "",
-    "id": "as-a-user-i-should-be-able-to-see-my-translating-history",
+    "name": "Keyboard Dropdown Options",
+    "description": "  Agile Story: As a user I should be able to change my entry keyboard\n  AC: User can change their entry keyboard based on selected language",
+    "id": "keyboard-dropdown-options",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/history.feature",
+    "uri": "file:src/test/resources/features/keyboardDropdown.feature",
     "tags": [
       {
-        "name": "@history",
+        "name": "@keyboardDropdown",
         "type": "Tag",
         "location": {
           "line": 1,
