@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class TextLength extends BasePage{
 
-    public static String[] generateRandomWords(){
+    public String[] generateRandomWords(){
         Random randomNumber = new Random();
 
         // Obtain a number between [0 - 49].
