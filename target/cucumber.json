@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-03-24T15:54:35.362Z",
+        "start_timestamp": "2021-03-24T19:58:22.510Z",
         "before": [
           {
             "result": {
-              "duration": 3847171000,
+              "duration": 3821087300,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 675088700,
+              "duration": 632167800,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2388875700,
+              "duration": 2290053200,
               "status": "passed"
             },
             "line": 7,
@@ -53,7 +53,7 @@
           },
           {
             "result": {
-              "duration": 4281178300,
+              "duration": 4102140500,
               "status": "passed"
             },
             "line": 8,
@@ -65,7 +65,7 @@
           },
           {
             "result": {
-              "duration": 74378400,
+              "duration": 42784800,
               "status": "passed"
             },
             "line": 9,
@@ -87,124 +87,6 @@
               {
                 "cells": [
                   "Turkish - Handwrite"
-                ]
-              }
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2223048500,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "user select \"English\" as a source language",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"English\"",
-                  "offset": 12
-                }
-              ],
-              "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_select_as_a_source_language(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 5143346100,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "user click on Select Input Tool dropdown button",
-            "match": {
-              "location": "com.googleTranslateProject.step_definitions.KeyboardOptionsStepDefs.user_click_on_Select_Input_Tool_dropdown_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 58381800,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "User should see below options",
-            "match": {
-              "location": "com.googleTranslateProject.step_definitions.KeyboardOptionsStepDefs.user_should_see_below_options(java.util.List\u003cjava.lang.String\u003e)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "English"
-                ]
-              },
-              {
-                "cells": [
-                  "English - DVORAK"
-                ]
-              },
-              {
-                "cells": [
-                  "English - Handwrite"
-                ]
-              }
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2234667700,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "user select \"Spanish\" as a source language",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Spanish\"",
-                  "offset": 12
-                }
-              ],
-              "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_select_as_a_source_language(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 4106325600,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "user click on Select Input Tool dropdown button",
-            "match": {
-              "location": "com.googleTranslateProject.step_definitions.KeyboardOptionsStepDefs.user_click_on_Select_Input_Tool_dropdown_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 66428500,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "User should see below options",
-            "match": {
-              "location": "com.googleTranslateProject.step_definitions.KeyboardOptionsStepDefs.user_should_see_below_options(java.util.List\u003cjava.lang.String\u003e)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "Spanish"
-                ]
-              },
-              {
-                "cells": [
-                  "US International"
-                ]
-              },
-              {
-                "cells": [
-                  "Spanish - Handwrite"
                 ]
               }
             ],
