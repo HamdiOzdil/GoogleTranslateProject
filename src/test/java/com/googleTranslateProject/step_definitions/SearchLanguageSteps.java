@@ -28,4 +28,6 @@ public class SearchLanguageSteps {
     public void only_languages_including_these_three_consequent_letters_should_be_seen(String searchLetters) {
         basePage.verifySearchedLetters(searchLetters);
     }
+
+
 }

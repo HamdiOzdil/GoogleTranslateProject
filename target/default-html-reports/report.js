@@ -1,133 +1,47 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/keyboardDropdown.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/sourceTextLength.feature");
 formatter.feature({
-  "name": "Keyboard Dropdown Options",
-  "description": "  Agile Story: As a user I should be able to change my entry keyboard\n  AC: User can change their entry keyboard based on selected language",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "name": "@keyboardDropdown"
-    }
-  ]
+  "name": "As a user I should be able to follow the length of my source text",
+  "description": "",
+  "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Verify that user can see keyboard options based on selected language",
+  "name": "User can follow the length of their source text",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@keyboardDropdown"
+      "name": "@wip"
     }
   ]
 });
 formatter.before({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "user select \"Turkish\" as a source language",
+  "name": "input text to source Translate Box",
+  "keyword": "Given "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "calculate length of source text",
   "keyword": "When "
 });
-formatter.match({
-  "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_select_as_a_source_language(java.lang.String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "user click on Select Input Tool dropdown button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.googleTranslateProject.step_definitions.KeyboardOptionsStepDefs.user_click_on_Select_Input_Tool_dropdown_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User should see below options",
-  "rows": [
-    {},
-    {},
-    {}
-  ],
+  "name": "verify length of source text is matching number displayed",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "com.googleTranslateProject.step_definitions.KeyboardOptionsStepDefs.user_should_see_below_options(java.util.List\u003cjava.lang.String\u003e)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user select \"English\" as a source language",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_select_as_a_source_language(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click on Select Input Tool dropdown button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.googleTranslateProject.step_definitions.KeyboardOptionsStepDefs.user_click_on_Select_Input_Tool_dropdown_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User should see below options",
-  "rows": [
-    {},
-    {},
-    {}
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.googleTranslateProject.step_definitions.KeyboardOptionsStepDefs.user_should_see_below_options(java.util.List\u003cjava.lang.String\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user select \"Spanish\" as a source language",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_select_as_a_source_language(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click on Select Input Tool dropdown button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.googleTranslateProject.step_definitions.KeyboardOptionsStepDefs.user_click_on_Select_Input_Tool_dropdown_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User should see below options",
-  "rows": [
-    {},
-    {},
-    {}
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.googleTranslateProject.step_definitions.KeyboardOptionsStepDefs.user_should_see_below_options(java.util.List\u003cjava.lang.String\u003e)"
-});
-formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.after({
-  "status": "passed"
+  "status": "skipped"
 });
 });
