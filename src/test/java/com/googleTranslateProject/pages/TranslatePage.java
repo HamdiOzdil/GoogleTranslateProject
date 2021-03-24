@@ -31,7 +31,7 @@ public class TranslatePage extends BasePage{
     @FindBy(xpath = "//span[@jsname='W297wb']")
     public WebElement targetWordOutputBox;
 
-    @FindBy(xpath = "//a[@class='ita-kd-icon-button ita-kd-dropdown ita-kd-right ita-kd-icon-button-hover']")
+    @FindBy(xpath = "//span[@class='ita-kd-img ita-kd-arrow ita-kd-icon-span']")
     public WebElement keyboardDropdownButton;
 
     @FindBy(xpath = "//span[@class='ita-kd-menuitem-inputtool-name']")

@@ -10,15 +10,15 @@ Feature: Keyboard Dropdown Options
       | Turkish - Q         |
       | Turkish - F         |
       | Turkish - Handwrite |
-    When user select "English" as a source language
-    And user click on Select Input Tool dropdown button
-    Then User should see below options
-      | English             |
-      | English - DVORAK    |
-      | English - Handwrite |
-    When user select "Spanish" as a source language
-    And user click on Select Input Tool dropdown button
-    Then User should see below options
-      | Spanish             |
-      | US International    |
-      | Spanish - Handwrite |
+#    When user select "English" as a source language
+#    And user click on Select Input Tool dropdown button
+#    Then User should see below options
+#      | English             |
+#      | English - DVORAK    |
+#      | English - Handwrite |
+#    When user select "Spanish" as a source language
+#    And user click on Select Input Tool dropdown button
+#    Then User should see below options
+#      | Spanish             |
+#      | US International    |
+#      | Spanish - Handwrite |
