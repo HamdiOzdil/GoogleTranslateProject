@@ -1,6 +1,6 @@
 package com.googleTranslateProject.step_definitions;
 
-import com.group8.pages.TranslatePage;
+import com.googleTranslateProject.pages.TranslatePage;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 

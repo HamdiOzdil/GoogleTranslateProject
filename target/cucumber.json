@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-03-22T14:14:52.846Z",
+        "start_timestamp": "2021-03-24T14:33:14.814Z",
         "before": [
           {
             "result": {
-              "duration": 13840530300,
+              "duration": 15600094000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 3,
-        "name": "User can see \"Sign In For Translation History\" message if user is not signed in",
+        "line": 10,
+        "name": "User can search source language",
         "description": "",
-        "id": "as-a-user-i-should-be-able-to-see-my-translating-history;user-can-see-\"sign-in-for-translation-history\"-message-if-user-is-not-signed-in",
+        "id": "as-a-user-i-should-be-able-to-search-source-language;user-can-search-source-language;search-some-several-languages-with-three-letters;2",
         "after": [
           {
             "result": {
-              "duration": 2476776600,
+              "duration": 230000000,
               "status": "passed"
             },
             "match": {
@@ -31,60 +31,155 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 1606589300,
+              "duration": 794544000,
               "status": "passed"
             },
-            "line": 4,
-            "name": "History Button is clicked",
+            "line": 5,
+            "name": "user should click more button on translate page",
             "match": {
-              "location": "com.googleTranslateProject.step_definitions.HistorySteps.history_Button_is_clicked()"
+              "location": "com.googleTranslateProject.step_definitions.SearchLanguageSteps.user_should_click_more_button_on_translate_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 569977000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters three letters \"ara\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ara\"",
+                  "offset": 26
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.SearchLanguageSteps.user_enters_three_letters(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 761562400,
+              "duration": 125193000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "\"Sign in for translation history\" message should appear",
+            "line": 7,
+            "name": "only languages including these three consequent letters \"ara\" should be seen",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Sign in for translation history\"",
-                  "offset": 0
+                  "val": "\"ara\"",
+                  "offset": 56
                 }
               ],
-              "location": "com.googleTranslateProject.step_definitions.HistorySteps.message_should_appear(java.lang.String)"
+              "location": "com.googleTranslateProject.step_definitions.SearchLanguageSteps.only_languages_including_these_three_consequent_letters_should_be_seen(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@history"
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-24T14:33:32.360Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5651677000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "User can search source language",
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-search-source-language;user-can-search-source-language;search-some-several-languages-with-three-letters;3",
+        "after": [
+          {
+            "result": {
+              "duration": 231845000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 168751000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user should click more button on translate page",
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.SearchLanguageSteps.user_should_click_more_button_on_translate_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 873020000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters three letters \"tur\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tur\"",
+                  "offset": 26
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.SearchLanguageSteps.user_enters_three_letters(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 105036000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "only languages including these three consequent letters \"tur\" should be seen",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tur\"",
+                  "offset": 56
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.SearchLanguageSteps.only_languages_including_these_three_consequent_letters_should_be_seen(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
           }
         ]
       }
     ],
-    "name": "As a user I should be able to see my translating history",
+    "name": "As a user I should be able to search source language",
     "description": "",
-    "id": "as-a-user-i-should-be-able-to-see-my-translating-history",
+    "id": "as-a-user-i-should-be-able-to-search-source-language",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/history.feature",
-    "tags": [
-      {
-        "name": "@history",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "file:src/test/resources/features/searchLanguage.feature",
+    "tags": []
   }
 ]
