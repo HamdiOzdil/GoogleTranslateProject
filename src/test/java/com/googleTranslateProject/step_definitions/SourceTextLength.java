@@ -4,8 +4,6 @@ import com.googleTranslateProject.pages.TextLength;
 import com.googleTranslateProject.pages.TranslatePage;
 import io.cucumber.java.en.*;
 
-import java.util.Random;
-
 public class SourceTextLength {
     TextLength textLength = new TextLength();
     TranslatePage translatePage = new TranslatePage();
