@@ -1,29 +1,29 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-03-24T16:54:47.863Z",
+        "start_timestamp": "2021-03-24T17:35:42.900Z",
         "before": [
           {
             "result": {
-              "duration": 13701571000,
-              "status": "passed"
+              "duration": 771000,
+              "status": "skipped"
             },
             "match": {
               "location": "com.googleTranslateProject.step_definitions.Hooks.setUp()"
             }
           }
         ],
-        "line": 10,
-        "name": "User can search source language",
+        "line": 3,
+        "name": "User can follow the length of their source text",
         "description": "",
-        "id": "as-a-user-i-should-be-able-to-search-source-language;user-can-search-source-language;search-some-several-languages-with-three-letters;2",
+        "id": "as-a-user-i-should-be-able-to-follow-the-length-of-my-source-text;user-can-follow-the-length-of-their-source-text",
         "after": [
           {
             "result": {
-              "duration": 244994000,
-              "status": "passed"
+              "duration": 18000,
+              "status": "skipped"
             },
             "match": {
               "location": "com.googleTranslateProject.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
@@ -31,140 +31,33 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 620750000,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 5,
-            "name": "user should click more button on translate page",
-            "match": {
-              "location": "com.googleTranslateProject.step_definitions.SearchLanguageSteps.user_should_click_more_button_on_translate_page()"
-            },
+            "line": 4,
+            "name": "input text to source Translate Box",
+            "match": {},
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 632212000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user enters three letters \"ara\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"ara\"",
-                  "offset": 26
-                }
-              ],
-              "location": "com.googleTranslateProject.step_definitions.SearchLanguageSteps.user_enters_three_letters(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 130175000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "only languages including these three consequent letters \"ara\" should be seen",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"ara\"",
-                  "offset": 56
-                }
-              ],
-              "location": "com.googleTranslateProject.step_definitions.SearchLanguageSteps.only_languages_including_these_three_consequent_letters_should_be_seen(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@wip"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-03-24T16:55:03.421Z",
-        "before": [
-          {
-            "result": {
-              "duration": 4668760000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.googleTranslateProject.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 11,
-        "name": "User can search source language",
-        "description": "",
-        "id": "as-a-user-i-should-be-able-to-search-source-language;user-can-search-source-language;search-some-several-languages-with-three-letters;3",
-        "after": [
-          {
-            "result": {
-              "duration": 192166000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.googleTranslateProject.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 420502000,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 5,
-            "name": "user should click more button on translate page",
-            "match": {
-              "location": "com.googleTranslateProject.step_definitions.SearchLanguageSteps.user_should_click_more_button_on_translate_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 409420000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user enters three letters \"tur\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"tur\"",
-                  "offset": 26
-                }
-              ],
-              "location": "com.googleTranslateProject.step_definitions.SearchLanguageSteps.user_enters_three_letters(java.lang.String)"
-            },
+            "name": "calculate length of source text",
+            "match": {},
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 55477000,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 7,
-            "name": "only languages including these three consequent letters \"tur\" should be seen",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"tur\"",
-                  "offset": 56
-                }
-              ],
-              "location": "com.googleTranslateProject.step_definitions.SearchLanguageSteps.only_languages_including_these_three_consequent_letters_should_be_seen(java.lang.String)"
-            },
+            "line": 6,
+            "name": "verify length of source text is matching number displayed",
+            "match": {},
             "keyword": "Then "
           }
         ],
@@ -175,11 +68,11 @@
         ]
       }
     ],
-    "name": "As a user I should be able to search source language",
+    "name": "As a user I should be able to follow the length of my source text",
     "description": "",
-    "id": "as-a-user-i-should-be-able-to-search-source-language",
+    "id": "as-a-user-i-should-be-able-to-follow-the-length-of-my-source-text",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/searchLanguage.feature",
+    "uri": "file:src/test/resources/features/sourceTextLength.feature",
     "tags": []
   }
 ]
