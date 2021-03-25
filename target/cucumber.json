@@ -1,0 +1,119 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-24T19:58:22.510Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3821087300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Verify that user can see keyboard options based on selected language",
+        "description": "",
+        "id": "keyboard-dropdown-options;verify-that-user-can-see-keyboard-options-based-on-selected-language",
+        "after": [
+          {
+            "result": {
+              "duration": 632167800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2290053200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user select \"Turkish\" as a source language",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Turkish\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_select_as_a_source_language(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4102140500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user click on Select Input Tool dropdown button",
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.KeyboardOptionsStepDefs.user_click_on_Select_Input_Tool_dropdown_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 42784800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should see below options",
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.KeyboardOptionsStepDefs.user_should_see_below_options(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Turkish - Q"
+                ]
+              },
+              {
+                "cells": [
+                  "Turkish - F"
+                ]
+              },
+              {
+                "cells": [
+                  "Turkish - Handwrite"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@keyboardDropdown"
+          }
+        ]
+      }
+    ],
+    "name": "Keyboard Dropdown Options",
+    "description": "  Agile Story: As a user I should be able to change my entry keyboard\n  AC: User can change their entry keyboard based on selected language",
+    "id": "keyboard-dropdown-options",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/keyboardDropdown.feature",
+    "tags": [
+      {
+        "name": "@keyboardDropdown",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

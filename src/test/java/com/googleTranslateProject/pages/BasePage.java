@@ -48,6 +48,20 @@ public class BasePage {
     public WebElement cookieBtn;
 
 
+    @FindBy(xpath = "(//div[@class='ySES5'])[1]")
+    public WebElement historyButton;
+
+
+    @FindBy(xpath = "//div[@class='fp93dc']")
+    public WebElement historyMessage;
+
+    @FindBy(xpath = "(//span[@class='RveJvd snByac'])[3]")
+    public WebElement approveMessage;
+
+    @FindBy(xpath = "//iframe[@class='gb_da gb_fa']")
+    public WebElement popUpFrame;
+
+
     public void verifySearchedLetters(String searchLetters){
     //actual List of searched languages
     String actualSearchResults = "//span[@class='QAJDKf' and @jsname='KTN78e']/..";
