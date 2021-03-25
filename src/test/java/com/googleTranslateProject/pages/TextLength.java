@@ -20,8 +20,8 @@ public class TextLength extends BasePage{
 
     public String getString(int n) {
         // chose a Character random from this String
-        String AlphaNumericString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                                    + " abcdefghijklmnopqrstuvxyz";
+        String AlphaNumericString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+                                    + " 0123456789abcdefghijklmnopqrstuvxyz";
 
         // create StringBuffer size of AlphaNumericString
         StringBuilder sb = new StringBuilder(n);
@@ -47,18 +47,26 @@ public class TextLength extends BasePage{
 
     public void sendText(){
 
+        System.out.println(inputText);
+
         translatePage.sourceWordInputBox.sendKeys(inputText);
     }
 
     public int calculateTextLength() {
         int lenghtOfText = inputText.length();
 
+        System.out.println(lenghtOfText);
+
         return lenghtOfText;
+
+
     }
     public void verifyTextLength() {
 
         int expectedLength = Integer.parseInt(letterCount.getText());
 
         Assert.assertEquals(expectedLength,calculateTextLength());
+
+        System.out.println(expectedLength);
     }
 }
