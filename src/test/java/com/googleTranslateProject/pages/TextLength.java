@@ -1,27 +1,64 @@
 package com.googleTranslateProject.pages;
 
+import org.junit.Assert;
+
 import java.util.Random;
 
 public class TextLength extends BasePage{
 
-    public static String[] generateRandomWords(){
-        Random randomNumber = new Random();
+    TranslatePage translatePage = new TranslatePage();
 
+    public int generateNumber(){
+        Random randomNumber = new Random();
         // Obtain a number between [0 - 49].
         int numberOfWords = randomNumber.nextInt(50);
 
         numberOfWords += 1;
 
-        String[] randomStrings = new String[numberOfWords];
+        return numberOfWords;
+    }
 
-        Random random = new Random();
-        for(int i = 0; i < numberOfWords; i++) {
-            char[] word = new char[random.nextInt(8)+3];
-            for(int j = 0; j < word.length; j++) {
-                word[j] = (char)('a' + random.nextInt(26));
-            }
-            randomStrings[i] = new String(word);
+    public String getString(int n) {
+        // chose a Character random from this String
+        String AlphaNumericString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                                    + " abcdefghijklmnopqrstuvxyz";
+
+        // create StringBuffer size of AlphaNumericString
+        StringBuilder sb = new StringBuilder(n);
+
+        for (int i = 0; i < n; i++) {
+
+            // generate a random number between
+            // 0 to AlphaNumericString variable length
+            int index
+                    = (int)(AlphaNumericString.length()
+                    * Math.random());
+
+            // add Character one by one in end of sb
+            sb.append(AlphaNumericString
+                    .charAt(index));
         }
-        return randomStrings;
+
+        return sb.toString();
+        }
+
+
+    String inputText = getString(generateNumber());
+
+    public void sendText(){
+
+        translatePage.sourceWordInputBox.sendKeys(inputText);
+    }
+
+    public int calculateTextLength() {
+        int lenghtOfText = inputText.length();
+
+        return lenghtOfText;
+    }
+    public void verifyTextLength() {
+
+        int expectedLength = Integer.parseInt(letterCount.getText());
+
+        Assert.assertEquals(expectedLength,calculateTextLength());
     }
 }

@@ -15,33 +15,39 @@ formatter.scenario({
   ]
 });
 formatter.before({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "input text to source Translate Box",
   "keyword": "Given "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.googleTranslateProject.step_definitions.SourceTextLength.input_text_to_source_Translate_Box()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
   "name": "calculate length of source text",
   "keyword": "When "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.googleTranslateProject.step_definitions.SourceTextLength.calculate_length_of_source_text()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
   "name": "verify length of source text is matching number displayed",
   "keyword": "Then "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.googleTranslateProject.step_definitions.SourceTextLength.verify_length_of_source_text_is_matching_number_displayed()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.after({
-  "status": "skipped"
+  "status": "passed"
 });
 });

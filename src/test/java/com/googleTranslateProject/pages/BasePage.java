@@ -32,7 +32,6 @@ public class BasePage {
     @FindBy(xpath = "(//i[@class='material-icons-extended VfPpkd-kBDsod'])[6]")
     public WebElement clearSearchText;
 
-
     @FindBy(xpath = "(//div[@class='ySES5'])[1]")
     public WebElement historyButton;
 
@@ -47,6 +46,9 @@ public class BasePage {
 
     @FindBy(xpath = "//span[@jsname='qKMVIf']")
     public WebElement letterCount;
+
+    @FindBy(xpath = "//div[@jscontroller='gWGePc']")
+    public WebElement displayedText;
 
 
     public void verifySearchedLetters(String searchLetters){
