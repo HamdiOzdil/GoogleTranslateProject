@@ -1,6 +1,6 @@
 
 Feature: As a user I should be able to search source language
-@wip
+  @searchLanguage
   Scenario Outline: User can search source language
     Given user should click more button on translate page
     When user enters three letters "<searchLetters>"

@@ -24,33 +24,16 @@ public class BasePage {
     public WebElement searchArea;
 
     @FindBy(xpath = "//span[@class='QAJDKf' and @jsname='KTN78e']/..")
-    public WebElement actualSearchResults;
+    public List <WebElement> actualSearchResults;
 
     @FindBy(xpath = "//div[@class='PxXj2d']")
-    public WebElement allLanguages;
+    public List <WebElement> allLanguages;
 
     @FindBy(xpath = "(//i[@class='material-icons-extended VfPpkd-kBDsod'])[6]")
     public WebElement clearSearchText;
 
-    @FindBy(xpath = "//textarea")
-    public  WebElement textArea;
-
-    @FindBy(xpath = "(//button[@aria-selected='true']//span[@class='VfPpkd-jY41G-V67aGc'])[1]")
-    public WebElement selectedLanguage;
-
-    @FindBy(xpath = "(//button[@aria-selected='true']//span[@class='VfPpkd-jY41G-V67aGc'])[2]")
-    public WebElement targetLanguage;
-
-    @FindBy(xpath = "(//button[@jsname='dnDxad'])[1]")
-    public WebElement swapBtn;
-
-    @FindBy(xpath = "(//span[@class='RveJvd snByac'])[3]")
-    public WebElement cookieBtn;
-
-
     @FindBy(xpath = "(//div[@class='ySES5'])[1]")
     public WebElement historyButton;
-
 
     @FindBy(xpath = "//div[@class='fp93dc']")
     public WebElement historyMessage;
@@ -61,12 +44,17 @@ public class BasePage {
     @FindBy(xpath = "//iframe[@class='gb_da gb_fa']")
     public WebElement popUpFrame;
 
+    @FindBy(xpath = "//span[@jsname='qKMVIf']")
+    public WebElement letterCount;
+
+    @FindBy(xpath = "//div[@jscontroller='gWGePc']")
+    public WebElement displayedText;
+
 
     public void verifySearchedLetters(String searchLetters){
     //actual List of searched languages
-    String actualSearchResults = "//span[@class='QAJDKf' and @jsname='KTN78e']/..";
 
-    List<String> actualList = BrowserUtils.getElementsText(By.xpath(actualSearchResults));
+    List<String> actualList = BrowserUtils.getElementsText(actualSearchResults);
 
     //verify letters are displayed on actual list of languages
     System.out.println("searchLetters = " + searchLetters);
@@ -80,10 +68,8 @@ public class BasePage {
 
     public void getListOfAllLanguages(){
         clearSearchText.click();
-        BrowserUtils.scrollToElement(allLanguages);
 
-        String allLanguages = "//div[@class='PxXj2d']";
-        List<String> allLanguageslList = BrowserUtils.getElementsText(By.xpath(allLanguages));
+        List<String> allLanguageslList = BrowserUtils.getElementsText(allLanguages);
 
         List<String> displayedLanguages = new ArrayList<>();
         for (String eachLanguage: allLanguageslList) {
