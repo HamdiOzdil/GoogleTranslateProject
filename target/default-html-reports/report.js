@@ -1,16 +1,21 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/sourceTextLength.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/keyboardDropdown.feature");
 formatter.feature({
-  "name": "As a user I should be able to follow the length of my source text",
-  "description": "",
-  "keyword": "Feature"
+  "name": "Keyboard Dropdown Options",
+  "description": "  Agile Story: As a user I should be able to change my entry keyboard\n  AC: User can change their entry keyboard based on selected language",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@keyboardDropdown"
+    }
+  ]
 });
 formatter.scenario({
-  "name": "User can follow the length of their source text",
+  "name": "Verify that user can see keyboard options based on selected language",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@wip"
+      "name": "@keyboardDropdown"
     }
   ]
 });
@@ -18,31 +23,36 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "input text to source Translate Box",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.googleTranslateProject.step_definitions.SourceTextLength.input_text_to_source_Translate_Box()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "calculate length of source text",
+  "name": "user select \"Turkish\" as a source language",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.googleTranslateProject.step_definitions.SourceTextLength.calculate_length_of_source_text()"
+  "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_select_as_a_source_language(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "verify length of source text is matching number displayed",
+  "name": "user click on Select Input Tool dropdown button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.googleTranslateProject.step_definitions.KeyboardOptionsStepDefs.user_click_on_Select_Input_Tool_dropdown_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should see below options",
+  "rows": [
+    {},
+    {},
+    {}
+  ],
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.googleTranslateProject.step_definitions.SourceTextLength.verify_length_of_source_text_is_matching_number_displayed()"
+  "location": "com.googleTranslateProject.step_definitions.KeyboardOptionsStepDefs.user_should_see_below_options(java.util.List\u003cjava.lang.String\u003e)"
 });
 formatter.result({
   "status": "passed"

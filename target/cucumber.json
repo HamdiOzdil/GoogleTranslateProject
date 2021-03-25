@@ -1,13 +1,13 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-03-25T12:03:34.870Z",
+        "start_timestamp": "2021-03-24T19:58:22.510Z",
         "before": [
           {
             "result": {
-              "duration": 9594598200,
+              "duration": 3821087300,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 3,
-        "name": "User can follow the length of their source text",
+        "line": 6,
+        "name": "Verify that user can see keyboard options based on selected language",
         "description": "",
-        "id": "as-a-user-i-should-be-able-to-follow-the-length-of-my-source-text;user-can-follow-the-length-of-their-source-text",
+        "id": "keyboard-dropdown-options;verify-that-user-can-see-keyboard-options-based-on-selected-language",
         "after": [
           {
             "result": {
-              "duration": 1115532700,
+              "duration": 632167800,
               "status": "passed"
             },
             "match": {
@@ -35,53 +35,85 @@
         "steps": [
           {
             "result": {
-              "duration": 6006187400,
+              "duration": 2290053200,
               "status": "passed"
             },
-            "line": 4,
-            "name": "input text to source Translate Box",
+            "line": 7,
+            "name": "user select \"Turkish\" as a source language",
             "match": {
-              "location": "com.googleTranslateProject.step_definitions.SourceTextLength.input_text_to_source_Translate_Box()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 994000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "calculate length of source text",
-            "match": {
-              "location": "com.googleTranslateProject.step_definitions.SourceTextLength.calculate_length_of_source_text()"
+              "arguments": [
+                {
+                  "val": "\"Turkish\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_select_as_a_source_language(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 92751300,
+              "duration": 4102140500,
               "status": "passed"
             },
-            "line": 6,
-            "name": "verify length of source text is matching number displayed",
+            "line": 8,
+            "name": "user click on Select Input Tool dropdown button",
             "match": {
-              "location": "com.googleTranslateProject.step_definitions.SourceTextLength.verify_length_of_source_text_is_matching_number_displayed()"
+              "location": "com.googleTranslateProject.step_definitions.KeyboardOptionsStepDefs.user_click_on_Select_Input_Tool_dropdown_button()"
             },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 42784800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should see below options",
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.KeyboardOptionsStepDefs.user_should_see_below_options(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Turkish - Q"
+                ]
+              },
+              {
+                "cells": [
+                  "Turkish - F"
+                ]
+              },
+              {
+                "cells": [
+                  "Turkish - Handwrite"
+                ]
+              }
+            ],
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@wip"
+            "name": "@keyboardDropdown"
           }
         ]
       }
     ],
-    "name": "As a user I should be able to follow the length of my source text",
-    "description": "",
-    "id": "as-a-user-i-should-be-able-to-follow-the-length-of-my-source-text",
+    "name": "Keyboard Dropdown Options",
+    "description": "  Agile Story: As a user I should be able to change my entry keyboard\n  AC: User can change their entry keyboard based on selected language",
+    "id": "keyboard-dropdown-options",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/sourceTextLength.feature",
-    "tags": []
+    "uri": "file:src/test/resources/features/keyboardDropdown.feature",
+    "tags": [
+      {
+        "name": "@keyboardDropdown",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]
