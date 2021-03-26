@@ -142,10 +142,8 @@ formatter.match({
   "location": "com.googleTranslateProject.step_definitions.SwapLanguagesSteps.verify_the_meanings_in_is_changed_with(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: expected:\u003cflower\u003e but was:\u003cnull\u003e\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:120)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat com.googleTranslateProject.pages.SwapPage.verifyMeaningSwapped(SwapPage.java:49)\n\tat com.googleTranslateProject.step_definitions.SwapLanguagesSteps.verify_the_meanings_in_is_changed_with(SwapLanguagesSteps.java:28)\n\tat ✽.verify the meanings in \"çiçek\" is changed with \"flower\"(file:///Users/mac/IdeaProjects/GoogleTranslateProject/src/test/resources/features/swap.feature:10)\n",
-  "status": "failed"
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded0.png", "screenshot");
 formatter.after({
   "status": "passed"
 });

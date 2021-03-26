@@ -40,7 +40,7 @@ public class SwapPage extends BasePage{
         System.out.println("sourceWord = " + sourceWord);
 
         //target text before swapping
-        String targetTextSwapped = translatePage.sourceWordInputBox.getText();
+        String targetTextSwapped = translatePage.sourceWordInputBox.getAttribute("value");
         System.out.println("targetTextSwapped = " + targetTextSwapped);
         System.out.println("targetWord = " + targetWord);
 

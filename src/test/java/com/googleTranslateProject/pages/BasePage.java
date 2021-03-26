@@ -47,7 +47,7 @@ public class BasePage {
     @FindBy(xpath = "//span[@jsname='qKMVIf']")
     public WebElement letterCount;
 
-    @FindBy(xpath = "//div[@jscontroller='gWGePc']")
+    @FindBy(xpath = "//textarea[@jsname='BJE2fc']")
     public WebElement displayedText;
 
     @FindBy(xpath = "(//button[@aria-selected='true']//span[@class='VfPpkd-jY41G-V67aGc'])[1]")
