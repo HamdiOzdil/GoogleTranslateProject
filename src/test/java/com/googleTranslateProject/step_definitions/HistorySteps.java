@@ -17,7 +17,6 @@ public class HistorySteps {
         new HistoryPage().approveMessage.click();
         BrowserUtils.waitForClickablility(new HistoryPage().historyButton,10);
         new HistoryPage().historyButton.click();
-
     }
 
 

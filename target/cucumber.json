@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-03-24T19:58:22.510Z",
+        "start_timestamp": "2021-03-26T01:45:35.550Z",
         "before": [
           {
             "result": {
-              "duration": 3821087300,
+              "duration": 11900658000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 6,
-        "name": "Verify that user can see keyboard options based on selected language",
+        "line": 13,
+        "name": "User should be able to swap languages",
         "description": "",
-        "id": "keyboard-dropdown-options;verify-that-user-can-see-keyboard-options-based-on-selected-language",
+        "id": "as-a-user-i-should-be-able-to-swap-the-languages-with-one-click;user-should-be-able-to-swap-languages;;2",
         "after": [
           {
             "result": {
-              "duration": 632167800,
+              "duration": 238183000,
               "status": "passed"
             },
             "match": {
@@ -31,14 +31,14 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 2290053200,
+              "duration": 3449594000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 4,
             "name": "user select \"Turkish\" as a source language",
             "match": {
               "arguments": [
@@ -53,61 +53,120 @@
           },
           {
             "result": {
-              "duration": 4102140500,
+              "duration": 2463071000,
               "status": "passed"
             },
-            "line": 8,
-            "name": "user click on Select Input Tool dropdown button",
+            "line": 5,
+            "name": "user select \"English\" as a target language",
             "match": {
-              "location": "com.googleTranslateProject.step_definitions.KeyboardOptionsStepDefs.user_click_on_Select_Input_Tool_dropdown_button()"
+              "arguments": [
+                {
+                  "val": "\"English\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_select_as_a_target_language(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 42784800,
+              "duration": 189995000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enter \"çiçek\" as a source word",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"çiçek\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_enter_as_a_source_word(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1823513000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should see \"flower\" as a target word",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"flower\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_should_see_as_a_target_word(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3624879000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User presses swap button",
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.SwapLanguagesSteps.user_presses_swap_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 866000,
               "status": "passed"
             },
             "line": 9,
-            "name": "User should see below options",
+            "name": "Both languages should be swapped",
             "match": {
-              "location": "com.googleTranslateProject.step_definitions.KeyboardOptionsStepDefs.user_should_see_below_options(java.util.List\u003cjava.lang.String\u003e)"
+              "location": "com.googleTranslateProject.step_definitions.SwapLanguagesSteps.both_languages_should_be_swapped()"
             },
-            "rows": [
-              {
-                "cells": [
-                  "Turkish - Q"
-                ]
-              },
-              {
-                "cells": [
-                  "Turkish - F"
-                ]
-              },
-              {
-                "cells": [
-                  "Turkish - Handwrite"
-                ]
-              }
-            ],
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 130651000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "verify the meanings in \"çiçek\" is changed with \"flower\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"çiçek\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"flower\"",
+                  "offset": 47
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.SwapLanguagesSteps.verify_the_meanings_in_is_changed_with(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@keyboardDropdown"
+            "name": "@swap"
           }
         ]
       }
     ],
-    "name": "Keyboard Dropdown Options",
-    "description": "  Agile Story: As a user I should be able to change my entry keyboard\n  AC: User can change their entry keyboard based on selected language",
-    "id": "keyboard-dropdown-options",
+    "name": "As a user I should be able to swap the languages with one click",
+    "description": "",
+    "id": "as-a-user-i-should-be-able-to-swap-the-languages-with-one-click",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/keyboardDropdown.feature",
+    "uri": "file:src/test/resources/features/swap.feature",
     "tags": [
       {
-        "name": "@keyboardDropdown",
+        "name": "@swap",
         "type": "Tag",
         "location": {
           "line": 1,

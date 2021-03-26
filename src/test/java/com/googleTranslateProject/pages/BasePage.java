@@ -47,9 +47,20 @@ public class BasePage {
     @FindBy(xpath = "//span[@jsname='qKMVIf']")
     public WebElement letterCount;
 
-    @FindBy(xpath = "//div[@jscontroller='gWGePc']")
+    @FindBy(xpath = "//textarea[@jsname='BJE2fc']")
     public WebElement displayedText;
 
+    @FindBy(xpath = "(//button[@aria-selected='true']//span[@class='VfPpkd-jY41G-V67aGc'])[1]")
+    public WebElement selectedLanguage;
+
+    @FindBy(xpath = "(//button[@aria-selected='true']//span[@class='VfPpkd-jY41G-V67aGc'])[2]")
+    public WebElement targetLanguage;
+
+    @FindBy(xpath = "(//i[text()='swap_horiz'])[1]")
+    public WebElement swapBtn;
+
+    @FindBy(xpath = "(//span[@class='RveJvd snByac'])[3]")
+    public WebElement cookieBtn;
 
     public void verifySearchedLetters(String searchLetters){
     //actual List of searched languages
