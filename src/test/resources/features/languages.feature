@@ -6,7 +6,7 @@ AC: User can select different languages
   Scenario:
     When user click on the source language dropdown button
     Then user should see all languages
-      | Afrikaans   |
+      | Africans    |
       | Albanian    |
       | Amharic     |
       | Arabic      |

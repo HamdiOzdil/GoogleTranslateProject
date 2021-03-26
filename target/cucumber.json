@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-03-26T01:45:35.550Z",
+        "start_timestamp": "2021-03-26T11:44:07.902Z",
         "before": [
           {
             "result": {
-              "duration": 11900658000,
+              "duration": 17807568000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 13,
-        "name": "User should be able to swap languages",
+        "line": 11,
+        "name": "Verify that user can translate words from one language to another language",
         "description": "",
-        "id": "as-a-user-i-should-be-able-to-swap-the-languages-with-one-click;user-should-be-able-to-swap-languages;;2",
+        "id": "smoke-test;verify-that-user-can-translate-words-from-one-language-to-another-language;;2",
         "after": [
           {
             "result": {
-              "duration": 238183000,
+              "duration": 395049000,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 3449594000,
+              "duration": 3422521000,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "user select \"Turkish\" as a source language",
             "match": {
               "arguments": [
@@ -53,10 +53,10 @@
           },
           {
             "result": {
-              "duration": 2463071000,
+              "duration": 2754255000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "user select \"English\" as a target language",
             "match": {
               "arguments": [
@@ -71,10 +71,10 @@
           },
           {
             "result": {
-              "duration": 189995000,
+              "duration": 319310000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "user enter \"çiçek\" as a source word",
             "match": {
               "arguments": [
@@ -89,10 +89,763 @@
           },
           {
             "result": {
-              "duration": 1823513000,
+              "duration": 2543224000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 8,
+            "name": "user should see \"flower\" as a target word",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"flower\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_should_see_as_a_target_word(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-26T11:44:35.661Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9717517000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "User can see \"Sign In For Translation History\" message if user is not signed in",
+        "description": "",
+        "id": "smoke-test;user-can-see-\"sign-in-for-translation-history\"-message-if-user-is-not-signed-in",
+        "after": [
+          {
+            "result": {
+              "duration": 467379000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 41398431000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "History Button is clicked",
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.HistorySteps.history_Button_is_clicked()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 793400000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "\"Sign in for translation history\" message should appear",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sign in for translation history\"",
+                  "offset": 0
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.HistorySteps.message_should_appear(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-26T11:45:28.104Z",
+        "before": [
+          {
+            "result": {
+              "duration": 11911275000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Verify that user can see keyboard options based on selected language",
+        "description": "",
+        "id": "smoke-test;verify-that-user-can-see-keyboard-options-based-on-selected-language",
+        "after": [
+          {
+            "result": {
+              "duration": 391014000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4108115000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user select \"Turkish\" as a source language",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Turkish\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_select_as_a_source_language(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4147159000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user click on Select Input Tool dropdown button",
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.KeyboardOptionsStepDefs.user_click_on_Select_Input_Tool_dropdown_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 145399000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User should see below options",
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.KeyboardOptionsStepDefs.user_should_see_below_options(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Turkish - Q"
+                ]
+              },
+              {
+                "cells": [
+                  "Turkish - F"
+                ]
+              },
+              {
+                "cells": [
+                  "Turkish - Handwrite"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2631050000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user select \"English\" as a source language",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"English\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_select_as_a_source_language(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4170164000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user click on Select Input Tool dropdown button",
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.KeyboardOptionsStepDefs.user_click_on_Select_Input_Tool_dropdown_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 96688000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User should see below options",
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.KeyboardOptionsStepDefs.user_should_see_below_options(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "English"
+                ]
+              },
+              {
+                "cells": [
+                  "English - DVORAK"
+                ]
+              },
+              {
+                "cells": [
+                  "English - Handwrite"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2667011000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "user select \"Spanish\" as a source language",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Spanish\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_select_as_a_source_language(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4166758000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user click on Select Input Tool dropdown button",
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.KeyboardOptionsStepDefs.user_click_on_Select_Input_Tool_dropdown_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 85834000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "User should see below options",
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.KeyboardOptionsStepDefs.user_should_see_below_options(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Spanish"
+                ]
+              },
+              {
+                "cells": [
+                  "US International"
+                ]
+              },
+              {
+                "cells": [
+                  "Spanish - Handwrite"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-26T11:46:02.673Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9633161000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "All languages",
+        "description": "",
+        "id": "smoke-test;all-languages",
+        "after": [
+          {
+            "result": {
+              "duration": 233005000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1248091000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "user click on the source language dropdown button",
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.LanguagesStepDef.user_click_on_the_source_language_dropdown_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1696259000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "user should see all languages",
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.LanguagesStepDef.user_should_see_all_languages(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Afrikaans"
+                ]
+              },
+              {
+                "cells": [
+                  "Albanian"
+                ]
+              },
+              {
+                "cells": [
+                  "Amharic"
+                ]
+              },
+              {
+                "cells": [
+                  "Arabic"
+                ]
+              },
+              {
+                "cells": [
+                  "Armenian"
+                ]
+              },
+              {
+                "cells": [
+                  "Azerbaijani"
+                ]
+              },
+              {
+                "cells": [
+                  "Basque"
+                ]
+              },
+              {
+                "cells": [
+                  "Belarusian"
+                ]
+              },
+              {
+                "cells": [
+                  "Bengali"
+                ]
+              },
+              {
+                "cells": [
+                  "Bosnian"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-26T11:46:15.505Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10221421000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 57,
+        "name": "User can search source language",
+        "description": "",
+        "id": "smoke-test;user-can-search-source-language;search-some-several-languages-with-three-letters;2",
+        "after": [
+          {
+            "result": {
+              "duration": 261969000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 829344000,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "user should click more button on translate page",
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.SearchLanguageSteps.user_should_click_more_button_on_translate_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1054467000,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "user enters three letters \"ara\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ara\"",
+                  "offset": 26
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.SearchLanguageSteps.user_enters_three_letters(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 196539000,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "only languages including these three consequent letters \"ara\" should be seen",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ara\"",
+                  "offset": 56
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.SearchLanguageSteps.only_languages_including_these_three_consequent_letters_should_be_seen(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-26T11:46:28.102Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9254172000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 58,
+        "name": "User can search source language",
+        "description": "",
+        "id": "smoke-test;user-can-search-source-language;search-some-several-languages-with-three-letters;3",
+        "after": [
+          {
+            "result": {
+              "duration": 287992000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1059810000,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "user should click more button on translate page",
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.SearchLanguageSteps.user_should_click_more_button_on_translate_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 682002000,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "user enters three letters \"tur\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tur\"",
+                  "offset": 26
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.SearchLanguageSteps.user_enters_three_letters(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 121636000,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "only languages including these three consequent letters \"tur\" should be seen",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tur\"",
+                  "offset": 56
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.SearchLanguageSteps.only_languages_including_these_three_consequent_letters_should_be_seen(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-26T11:46:39.527Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7890813000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 60,
+        "name": "User can follow the length of their source text",
+        "description": "",
+        "id": "smoke-test;user-can-follow-the-length-of-their-source-text",
+        "after": [
+          {
+            "result": {
+              "duration": 199009000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6946994000,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "input text to source Translate Box",
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.SourceTextLength.input_text_to_source_Translate_Box()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1166000,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "calculate length of source text",
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.SourceTextLength.calculate_length_of_source_text()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 73481000,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "verify length of source text is matching number displayed",
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.SourceTextLength.verify_length_of_source_text_is_matching_number_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-26T11:46:54.662Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8419838000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 75,
+        "name": "User should be able to swap languages",
+        "description": "",
+        "id": "smoke-test;user-should-be-able-to-swap-languages;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 297778000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3589409000,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "user select \"Turkish\" as a source language",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Turkish\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_select_as_a_source_language(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2620713000,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "user select \"English\" as a target language",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"English\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_select_as_a_target_language(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 291078000,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "user enter \"çiçek\" as a source word",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"çiçek\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_enter_as_a_source_word(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1597837000,
+              "status": "passed"
+            },
+            "line": 69,
             "name": "user should see \"flower\" as a target word",
             "match": {
               "arguments": [
@@ -107,10 +860,10 @@
           },
           {
             "result": {
-              "duration": 3624879000,
+              "duration": 3495555000,
               "status": "passed"
             },
-            "line": 8,
+            "line": 70,
             "name": "User presses swap button",
             "match": {
               "location": "com.googleTranslateProject.step_definitions.SwapLanguagesSteps.user_presses_swap_button()"
@@ -119,10 +872,10 @@
           },
           {
             "result": {
-              "duration": 866000,
+              "duration": 612000,
               "status": "passed"
             },
-            "line": 9,
+            "line": 71,
             "name": "Both languages should be swapped",
             "match": {
               "location": "com.googleTranslateProject.step_definitions.SwapLanguagesSteps.both_languages_should_be_swapped()"
@@ -131,10 +884,10 @@
           },
           {
             "result": {
-              "duration": 130651000,
+              "duration": 166610000,
               "status": "passed"
             },
-            "line": 10,
+            "line": 72,
             "name": "verify the meanings in \"çiçek\" is changed with \"flower\"",
             "match": {
               "arguments": [
@@ -154,19 +907,643 @@
         ],
         "tags": [
           {
-            "name": "@swap"
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-26T11:47:15.184Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7625895000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 76,
+        "name": "User should be able to swap languages",
+        "description": "",
+        "id": "smoke-test;user-should-be-able-to-swap-languages;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 274818000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3977074000,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "user select \"Turkish\" as a source language",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Turkish\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_select_as_a_source_language(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2682266000,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "user select \"English\" as a target language",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"English\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_select_as_a_target_language(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 467398000,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "user enter \"bilgisayar\" as a source word",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bilgisayar\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_enter_as_a_source_word(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1988356000,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "user should see \"computer\" as a target word",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"computer\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_should_see_as_a_target_word(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3749941000,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "User presses swap button",
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.SwapLanguagesSteps.user_presses_swap_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1866000,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "Both languages should be swapped",
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.SwapLanguagesSteps.both_languages_should_be_swapped()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 146975000,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "verify the meanings in \"bilgisayar\" is changed with \"computer\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bilgisayar\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"computer\"",
+                  "offset": 52
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.SwapLanguagesSteps.verify_the_meanings_in_is_changed_with(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-26T11:47:36.126Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7606032000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 77,
+        "name": "User should be able to swap languages",
+        "description": "",
+        "id": "smoke-test;user-should-be-able-to-swap-languages;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 302510000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4117064000,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "user select \"Turkish\" as a source language",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Turkish\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_select_as_a_source_language(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3109344000,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "user select \"English\" as a target language",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"English\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_select_as_a_target_language(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 380398000,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "user enter \"araba\" as a source word",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"araba\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_enter_as_a_source_word(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2300272000,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "user should see \"car\" as a target word",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"car\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_should_see_as_a_target_word(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3578924000,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "User presses swap button",
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.SwapLanguagesSteps.user_presses_swap_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 621000,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "Both languages should be swapped",
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.SwapLanguagesSteps.both_languages_should_be_swapped()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 168396000,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "verify the meanings in \"araba\" is changed with \"car\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"araba\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"car\"",
+                  "offset": 47
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.SwapLanguagesSteps.verify_the_meanings_in_is_changed_with(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-26T11:47:57.722Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8228286000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 78,
+        "name": "User should be able to swap languages",
+        "description": "",
+        "id": "smoke-test;user-should-be-able-to-swap-languages;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 338361000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3914937000,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "user select \"Turkish\" as a source language",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Turkish\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_select_as_a_source_language(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2642599000,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "user select \"English\" as a target language",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"English\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_select_as_a_target_language(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 311338000,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "user enter \"kedi\" as a source word",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"kedi\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_enter_as_a_source_word(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1976878000,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "user should see \"cat\" as a target word",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"cat\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_should_see_as_a_target_word(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3681510000,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "User presses swap button",
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.SwapLanguagesSteps.user_presses_swap_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4015000,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "Both languages should be swapped",
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.SwapLanguagesSteps.both_languages_should_be_swapped()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 265751000,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "verify the meanings in \"kedi\" is changed with \"cat\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"kedi\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"cat\"",
+                  "offset": 46
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.SwapLanguagesSteps.verify_the_meanings_in_is_changed_with(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-26T11:48:19.123Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8560790000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 79,
+        "name": "User should be able to swap languages",
+        "description": "",
+        "id": "smoke-test;user-should-be-able-to-swap-languages;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 301808000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3551106000,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "user select \"Turkish\" as a source language",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Turkish\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_select_as_a_source_language(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2715567000,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "user select \"English\" as a target language",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"English\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_select_as_a_target_language(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 249398000,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "user enter \"bir\" as a source word",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bir\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_enter_as_a_source_word(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2802401000,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "user should see \"one\" as a target word",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"one\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.BasicTranslation.user_should_see_as_a_target_word(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3830817000,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "User presses swap button",
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.SwapLanguagesSteps.user_presses_swap_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1262000,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "Both languages should be swapped",
+            "match": {
+              "location": "com.googleTranslateProject.step_definitions.SwapLanguagesSteps.both_languages_should_be_swapped()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 209334000,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "verify the meanings in \"bir\" is changed with \"one\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bir\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"one\"",
+                  "offset": 45
+                }
+              ],
+              "location": "com.googleTranslateProject.step_definitions.SwapLanguagesSteps.verify_the_meanings_in_is_changed_with(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
           }
         ]
       }
     ],
-    "name": "As a user I should be able to swap the languages with one click",
+    "name": "Smoke Test",
     "description": "",
-    "id": "as-a-user-i-should-be-able-to-swap-the-languages-with-one-click",
+    "id": "smoke-test",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/swap.feature",
+    "uri": "file:src/test/resources/features/smokeTest.feature",
     "tags": [
       {
-        "name": "@swap",
+        "name": "@smoke",
         "type": "Tag",
         "location": {
           "line": 1,

@@ -10,7 +10,7 @@ Feature: Basic Translation
     Then user should see "<Target Word>" as a target word
     Examples:
       | Source Word | Target Word |
-      | çiçek      | flower        |
+      | çiçek      | flower       |
 #      | computer    | bilgisayar  |
 #      | car         | araba       |
 
