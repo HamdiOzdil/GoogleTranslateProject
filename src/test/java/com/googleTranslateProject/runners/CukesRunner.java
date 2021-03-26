@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/googleTranslateProject/step_definitions",
         dryRun = false,
-        tags = "@swap"
+        tags = "@smoke"
 )
 public class CukesRunner {
 

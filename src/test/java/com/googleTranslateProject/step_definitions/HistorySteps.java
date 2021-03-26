@@ -12,11 +12,14 @@ public class HistorySteps {
 
     @When("History Button is clicked")
     public void history_Button_is_clicked() {
-        Driver.get().switchTo().frame(new HistoryPage().popUpFrame);
+        try{
+            Driver.get().switchTo().frame(new HistoryPage().popUpFrame);
         BrowserUtils.waitForClickablility(new HistoryPage().approveMessage,10);
         new HistoryPage().approveMessage.click();
-        BrowserUtils.waitForClickablility(new HistoryPage().historyButton,10);
-        new HistoryPage().historyButton.click();
+        } catch (Exception e) {
+            BrowserUtils.waitForClickablility(new HistoryPage().historyButton, 10);
+            new HistoryPage().historyButton.click();
+        }
     }
 
 

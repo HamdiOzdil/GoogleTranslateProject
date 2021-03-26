@@ -11,10 +11,10 @@
       Examples:
         | Source Word | Target Word |
         | çiçek       | flower      |
-#        | bilgisayar  | computer    |
-#        | araba       | car         |
-#        | bilim       | science     |
-#        | merhaba     | Hello there |
+        | bilgisayar  | computer    |
+        | araba       | car         |
+        | bilim       | science     |
+        | merhaba     | Hello there |
       
 
 

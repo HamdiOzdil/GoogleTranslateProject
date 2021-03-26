@@ -80,13 +80,13 @@ public class TranslatePage extends BasePage{
     }
 
     public List<String> createActualLanguagesList(){
-        List<String> actualLangugeList = new ArrayList<>();
+        List<String> actualLanguageList = new ArrayList<>();
         String baseLocator = "(//div[@class='ordo2'])";
         for (int i=1 ; i<11 ; i++){
             WebElement language = Driver.get().findElement(By.xpath(baseLocator + "[" + i + "]"));
-            actualLangugeList.add(language.getText());
+            actualLanguageList.add(language.getText());
         }
-        return actualLangugeList;
+        return actualLanguageList;
     }
 
     public void verifyLanguages(List<String> expectedLanguagesList, List<String> actualLanguagesList){
